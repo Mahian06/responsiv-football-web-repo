@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 18px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+header {
+    background: blue;
+}
+
+.menu-item ul {
+    list-style-type: none;
+}
+
+.menu-item ul li {
+    padding: 10px;
+}
+
+.menu-item ul li:hover a {
+    background: #1e1e1e;
+}
+
+.menu-item ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    transition: .5s all;
+    background: none;
+}
+
+.menu-item a {
+    background: #E02C6D;
+    padding: 5px 10px;
+    transition: .5s all;
+}
+
+.menu-item a:hover {
+    background: #1e1e1e;
+}
+
+.header-container {
+    padding: 30px 0;
+}
+
+.header-title h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.header-title a {
+    background: #E02C6D;
+    transition: .5s all;
+    padding: 5px 10px;
+}
+
+.header-title a:hover {
+    background: #1e1e1e;
+}
+
+.header-banner img {
+    width: 556px;
+}
+
+/* header end */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin-top: 1.5em;
+}
+
+.player-id {
+    width: 330px;
+    height: 400px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 10px 5px 25px #1e1e1e;
+}
+
+.players-id img {
+    width: 300px;
+    height: 270px;
+}
+
+.players-id h2 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.players-id p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.heilight h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.heilight p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.heilight a {
+    background: #E02C6D;
+    padding: 5px 10px;
+    transition: .5s all;
+}
+
+.heilight a:hover {
+    background: #1e1e1e;
+}
+
+.hiligh-img img {
+    width: 560px;
+    height: 480px;
+}
+
+.main-container {
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 360px;
+}
+
+.copyright p {
+    text-align: center;
+    padding: 15px 0;
+}
