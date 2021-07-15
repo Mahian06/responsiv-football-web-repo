@@ -1,43 +1,142 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 80%;
     }
+
+    /* header container */
+    .header-container {
+        padding: 0 0 30px 0;
+        margin: 20px 15px;
+    }
+
+    .header-title {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-title h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .header-title a {
+        margin-left: 20px;
+    }
+
+    .header-imageg img {
+        width: 330px;
+        height: 260px;
+    }
+
+    /* menu item */
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        background: #2d25a0;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: .5s all ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+    nav ul li {
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: cyan;
+        background: none;
+    }
+
+    nav .menu-btn i {
+        display: block;
+    }
+
+
+    /* header container */
+    .header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-title {
+        padding: 40px 20px;
+    }
+
+    .header-container h1 {
+        font-size: 50px;
+        margin: 15px 0;
+        padding: 40px 20px;
+    }
+
+    .header-banner img {
+        width: 300px;
+        padding: 40px 10px;
+
+    }
+
+    /* player css start */
 
     .players {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
+        grid-gap: 5px;
         margin-top: 1.5em;
     }
 
     .player-id {
         width: 330px;
-        height: 400px;
-        padding: 10px;
-        box-shadow: 10px 5px 25px #1e1e1e;
+        height: 476px;
+        padding: 10px 0;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
     }
 
     .players-id img {
-        width: 400px;
-        height: 370px;
-        margin: 0 40px 0;
+        width: 300px;
+        height: 256px;
     }
 
     .players-id h2 {
-        font-size: 30px;
-        padding: 20px 40px;
+        font-size: 28px;
+        padding: 5px 0;
     }
 
     .players-id p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
-        padding: 15px 40px;
     }
+
+    /* player css end */
+    /* article css start */
 
     article {
         display: flex;
         flex-direction: column;
     }
+
+    /* article css end */
+    /* heilighit css start*/
 
     .heilight {
         padding: 10px 30px;
@@ -45,18 +144,20 @@
     }
 
     .hiligh-img img {
-        width: 450px;
+        width: 300px;
         padding: 40px;
     }
 
     .heilight h1 {
-        font-size: 38px;
-        font-weight: 800;
+        font-size: 30px;
+        font-weight: 600;
         margin-bottom: 15px;
+        padding: 0 0 0 0;
+        margin-right: 0;
     }
 
     .heilight p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
         margin-bottom: 30px;
         padding-bottom: 20px;
@@ -72,12 +173,29 @@
         background: #1e1e1e;
     }
 
-    .footer-logo {
-        display: flex;
-        justify-content: center;
+    .hilight-img img {
+        width: 328px;
+        height: 248px;
+    }
+
+    /* heilight css end*/
+    /* footer css start */
+
+
+
+    .footer-logo img {
+        width: 250px;
+        height: 110px;
+    }
+
+    .socal-icon .socal {
+        color: ##1b1b1b;
+        text-align: center;
     }
 
     .copyright p {
         text-align: center;
     }
+
+    /* footer css end */
 }
